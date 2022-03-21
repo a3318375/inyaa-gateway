@@ -7,7 +7,7 @@ spring:
   application:
     name: inyaa-gateway # 应用名称
   profiles:
-    active: dev # 指定环境，默认加载 default 环境
+    active: pro # 指定环境，默认加载 default 环境
   cloud:
     consul:
       # Consul 服务器地址
