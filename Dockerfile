@@ -4,4 +4,4 @@ FROM openjdk:17-jdk-alpine
 ADD build/libs/inyaa-gateway.jar ./
 EXPOSE 8083
 #开机启动
-ENTRYPOINT ["java","-jar","/inyaa-gateway.jar"]
+ENTRYPOINT ["java","-jar","/inyaa-gateway.jar", "--spring.profiles.active=pro"]
