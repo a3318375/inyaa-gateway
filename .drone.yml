@@ -40,7 +40,8 @@ steps:
     pull: if-not-exists
     image: appleboy/drone-ssh
     settings:
-      host: 43.143.123.82
+      host:
+        from_secret: ssh_ip
       username:
         from_secret: ssh_username
       password:
