@@ -16,6 +16,7 @@ steps:
     image: gradle:jdk21
     commands:
       - export GRADLE_USER_HOME=./.gradle
+      - chmod +x ./gradlew
       - ./gradlew
   - name: rebuild-cache
     image: drillster/drone-volume-cache
