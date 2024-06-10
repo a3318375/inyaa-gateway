@@ -1,0 +1,915 @@
+2024-01-03 10:20:15 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 10:20:15 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21 with PID 14472 (D:\java\workspace3\inyaa\inyaa-gateway\build\classes\java\main started by yuxhc in D:\java\workspace3\inyaa\inyaa-gateway)
+2024-01-03 10:20:15 [org.springframework.boot.SpringApplication:668] - The following 1 profile is active: "dev"
+2024-01-03 10:20:15 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-03 10:20:15 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-03 10:20:17 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:292] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-03 10:20:17 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:139] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 10:20:17 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2024-01-03 10:20:17 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:292] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-03 10:20:17 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:139] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-03 10:20:17 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-01-03 10:20:18 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=f2b54885-707d-3c50-84b9-038167d23145
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x00000268b05d69f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:19 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:20:20 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 10:20:20 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-03 10:20:20 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-01-03 10:20:21 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 10:20:21 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2024-01-03 10:20:21 [com.zaxxer.hikari.pool.HikariPool:565] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e813a42
+2024-01-03 10:20:21 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2024-01-03 10:20:22 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 10:20:22 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 10:20:25 [org.springframework.context.support.AbstractApplicationContext:633] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nettyWriteResponseFilter' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration$NettyConfiguration.class]: Unsatisfied dependency expressed through method 'nettyWriteResponseFilter' parameter 0: Error creating bean with name 'gatewayProperties': Could not bind properties to 'GatewayProperties' : prefix=spring.cloud.gateway, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-01-03 10:20:25 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 10:20:25 [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2024-01-03 10:20:25 [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2024-01-03 10:20:25 [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-03 10:20:25 [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.cloud.gateway' to org.springframework.cloud.gateway.config.GatewayProperties failed:
+
+    Property: spring.cloud.gateway.routes[0].predicates
+    Value: "[]"
+    Reason: 不能为空
+
+
+Action:
+
+Update your application's configuration
+
+2024-01-03 10:23:28 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 10:23:28 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21 with PID 9240 (D:\java\workspace3\inyaa\inyaa-gateway\build\classes\java\main started by yuxhc in D:\java\workspace3\inyaa\inyaa-gateway)
+2024-01-03 10:23:28 [org.springframework.boot.SpringApplication:668] - The following 1 profile is active: "dev"
+2024-01-03 10:23:28 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-03 10:23:28 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-03 10:23:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:292] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-03 10:23:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:139] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 10:23:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+2024-01-03 10:23:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:292] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-03 10:23:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:139] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-03 10:23:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2024-01-03 10:23:31 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=f2b54885-707d-3c50-84b9-038167d23145
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x000001a3465d6c28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:32 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 10:23:33 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 10:23:34 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-03 10:23:34 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-01-03 10:23:34 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 10:23:34 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2024-01-03 10:23:35 [com.zaxxer.hikari.pool.HikariPool:565] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@aff7ac6
+2024-01-03 10:23:35 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2024-01-03 10:23:35 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 10:23:35 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-01-03 10:23:39 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-01-03 10:23:42 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-03 10:23:45 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+2024-01-03 10:23:45 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-01-03 10:23:46 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8083
+2024-01-03 10:23:46 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.1.61', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.61:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-01-03 10:23:46 [org.springframework.boot.StartupInfoLogger:56] - Started InyaaGatewayApplication in 19.827 seconds (process running for 24.147)
+2024-01-03 10:25:17 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:89] - Deregistering service with consul: inyaa-gateway-01
+2024-01-03 10:25:20 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 10:25:20 [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2024-01-03 10:25:20 [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2024-01-03 14:34:48 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 14:34:48 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21 with PID 28624 (D:\java\workspace3\inyaa\inyaa-gateway\build\classes\java\main started by yuxhc in D:\java\workspace3\inyaa\inyaa-gateway)
+2024-01-03 14:34:48 [org.springframework.boot.SpringApplication:668] - The following 1 profile is active: "dev"
+2024-01-03 14:34:48 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-03 14:34:48 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-03 14:34:51 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:292] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-03 14:34:51 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:139] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 14:34:51 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2024-01-03 14:34:51 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:292] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-03 14:34:51 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:139] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-03 14:34:51 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-01-03 14:34:51 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=f2b54885-707d-3c50-84b9-038167d23145
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda/0x000001b8ab5fee20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification' of type [org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerClientFactory' of type [org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'blockingLoadBalancerClient' of type [org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerServiceInstanceCookieTransformer' of type [org.springframework.cloud.loadbalancer.core.LoadBalancerServiceInstanceCookieTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'xForwarderHeadersTransformer' of type [org.springframework.cloud.loadbalancer.blocking.XForwardedHeadersTransformer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerRequestFactory' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'loadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:53 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-01-03 14:34:54 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 14:34:54 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-03 14:34:54 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-01-03 14:34:55 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 14:34:55 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2024-01-03 14:34:55 [com.zaxxer.hikari.pool.HikariPool:565] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4640fcaf
+2024-01-03 14:34:55 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2024-01-03 14:34:56 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 14:34:56 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-01-03 14:35:01 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-01-03 14:35:03 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:58] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-03 14:35:06 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+2024-01-03 14:35:07 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-01-03 14:35:07 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8083
+2024-01-03 14:35:07 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.1.61', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.1.61:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-01-03 14:35:07 [org.springframework.boot.StartupInfoLogger:56] - Started InyaaGatewayApplication in 21.746 seconds (process running for 31.801)
+2024-01-03 14:37:59 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:89] - Deregistering service with consul: inyaa-gateway-01
+2024-01-03 14:38:00 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 14:38:00 [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2024-01-03 14:38:00 [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2024-06-05 14:52:58 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 14:52:58 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 114276 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 14:52:58 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 14:52:58 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 14:52:58 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 14:52:58 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:52:58 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:52:58 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-06-05 14:52:58 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:52:58 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 14:52:58 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 14:52:58 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 14:52:59 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:52:59 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:52:59 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:52:59 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:52:59 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:52:59 [org.springframework.context.support.AbstractApplicationContext:632] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-06-05 14:52:59 [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-05 14:52:59 [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2024-06-05 14:54:43 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 14:54:43 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 8652 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 14:54:43 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 14:54:43 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 14:54:43 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 14:54:44 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:54:44 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:54:44 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-06-05 14:54:44 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:54:44 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 14:54:44 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 14:54:44 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 14:54:44 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:54:44 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:54:44 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:54:44 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:54:44 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:54:45 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 14:55:07 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 14:55:07 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 14:55:07 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 14:55:07 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 14:55:07 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 14:55:38 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 14:55:38 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 121916 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 14:55:38 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 14:55:38 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 14:55:38 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 14:55:38 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:55:38 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:55:38 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2024-06-05 14:55:38 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:55:38 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 14:55:38 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 14:55:38 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 14:55:39 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:55:39 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:55:39 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:55:39 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:55:39 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:55:39 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 14:55:39 [com.zaxxer.hikari.pool.HikariPool:554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50487a93
+2024-06-05 14:55:39 [com.zaxxer.hikari.HikariDataSource:122] - HikariPool-1 - Start completed.
+2024-06-05 14:55:39 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 14:55:39 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 14:55:39 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 14:55:39 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 14:55:40 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05 14:55:40 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-06-05 14:55:40 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-05 14:55:41 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60] - Exposing 1 endpoint beneath base path '/actuator'
+2024-06-05 14:55:41 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+2024-06-05 14:55:41 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-05 14:55:41 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8001 (http)
+2024-06-05 14:55:41 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.50.63', meta={secure=false}, port=8001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.50.63:8001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-06-05 14:55:43 [org.springframework.cloud.consul.discovery.ConsulCatalogWatch:142] - Error watching Consul CatalogServices
+com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to 118.195.250.48:8500 [/118.195.250.48] failed: Connection refused: getsockopt
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83)
+	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36)
+	at com.ecwid.consul.v1.ConsulRawClient.makeGetRequest(ConsulRawClient.java:139)
+	at com.ecwid.consul.v1.catalog.CatalogConsulClient.getCatalogServices(CatalogConsulClient.java:143)
+	at com.ecwid.consul.v1.ConsulClient.getCatalogServices(ConsulClient.java:400)
+	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:130)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:358)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 118.195.250.48:8500 [/118.195.250.48] failed: Connection refused: getsockopt
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140)
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70)
+	... 13 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 25 common frames omitted
+2024-06-05 14:55:44 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:76] - Error registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.50.63', meta={secure=false}, port=8001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.50.63:8001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to 118.195.250.48:8500 [/118.195.250.48] failed: Connection refused: getsockopt
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83)
+	at com.ecwid.consul.transport.AbstractHttpTransport.makePutRequest(AbstractHttpTransport.java:49)
+	at com.ecwid.consul.v1.ConsulRawClient.makePutRequest(ConsulRawClient.java:163)
+	at com.ecwid.consul.v1.agent.AgentConsulClient.agentServiceRegister(AgentConsulClient.java:273)
+	at com.ecwid.consul.v1.ConsulClient.agentServiceRegister(ConsulClient.java:310)
+	at org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry.register(ConsulServiceRegistry.java:67)
+	at org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry.register(ConsulServiceRegistry.java:43)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistration.register(ConsulAutoServiceRegistration.java:80)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistration.start(ConsulAutoServiceRegistration.java:70)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationListener.onApplicationEvent(ConsulAutoServiceRegistrationListener.java:60)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57)
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:41)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:288)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:471)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:260)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:981)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at cn.inyaa.gateway.InyaaGatewayApplication.main(InyaaGatewayApplication.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 118.195.250.48:8500 [/118.195.250.48] failed: Connection refused: getsockopt
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140)
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70)
+	... 35 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 47 common frames omitted
+2024-06-05 14:55:44 [org.springframework.context.support.AbstractApplicationContext:632] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-06-05 14:55:44 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:55:44 [com.zaxxer.hikari.HikariDataSource:349] - HikariPool-1 - Shutdown initiated...
+2024-06-05 14:55:44 [com.zaxxer.hikari.HikariDataSource:351] - HikariPool-1 - Shutdown completed.
+2024-06-05 14:55:44 [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-05 14:55:44 [org.springframework.boot.SpringApplication:859] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:291)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:471)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:260)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:981)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at cn.inyaa.gateway.InyaaGatewayApplication.main(InyaaGatewayApplication.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to 118.195.250.48:8500 [/118.195.250.48] failed: Connection refused: getsockopt
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83)
+	at com.ecwid.consul.transport.AbstractHttpTransport.makePutRequest(AbstractHttpTransport.java:49)
+	at com.ecwid.consul.v1.ConsulRawClient.makePutRequest(ConsulRawClient.java:163)
+	at com.ecwid.consul.v1.agent.AgentConsulClient.agentServiceRegister(AgentConsulClient.java:273)
+	at com.ecwid.consul.v1.ConsulClient.agentServiceRegister(ConsulClient.java:310)
+	at org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry.register(ConsulServiceRegistry.java:67)
+	at org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry.register(ConsulServiceRegistry.java:43)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistration.register(ConsulAutoServiceRegistration.java:80)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistration.start(ConsulAutoServiceRegistration.java:70)
+	at org.springframework.cloud.consul.serviceregistry.ConsulAutoServiceRegistrationListener.onApplicationEvent(ConsulAutoServiceRegistrationListener.java:60)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57)
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:41)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:288)
+	... 16 common frames omitted
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 118.195.250.48:8500 [/118.195.250.48] failed: Connection refused: getsockopt
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:221)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:165)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140)
+	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70)
+	... 35 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 47 common frames omitted
+2024-06-05 14:56:04 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 14:56:04 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 100844 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 14:56:04 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 14:56:04 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 14:56:04 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 14:56:05 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:56:05 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:56:05 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-06-05 14:56:05 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:56:05 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 14:56:05 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 14:56:05 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 14:56:05 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:56:05 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:56:05 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:56:05 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:56:05 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:56:05 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 14:56:05 [com.zaxxer.hikari.pool.HikariPool:554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@197346ed
+2024-06-05 14:56:05 [com.zaxxer.hikari.HikariDataSource:122] - HikariPool-1 - Start completed.
+2024-06-05 14:56:05 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 14:56:05 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 14:56:05 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 14:56:05 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 14:56:06 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05 14:56:06 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-06-05 14:56:06 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-05 14:56:09 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 14:56:09 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 20856 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 14:56:09 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 14:56:09 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 14:56:09 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 14:56:09 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:56:09 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:56:09 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2024-06-05 14:56:09 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:56:09 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 14:56:09 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 14:56:10 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 14:56:10 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:56:10 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:56:10 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:56:10 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:56:10 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:56:10 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 14:56:10 [com.zaxxer.hikari.pool.HikariPool:554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3186bece
+2024-06-05 14:56:10 [com.zaxxer.hikari.HikariDataSource:122] - HikariPool-1 - Start completed.
+2024-06-05 14:56:10 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 14:56:10 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 14:56:10 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 14:56:11 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 14:56:11 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05 14:56:11 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-06-05 14:56:12 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-05 14:56:12 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60] - Exposing 1 endpoint beneath base path '/actuator'
+2024-06-05 14:56:12 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+2024-06-05 14:56:13 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-05 14:56:13 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8001 (http)
+2024-06-05 14:56:13 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.50.63', meta={secure=false}, port=8001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.50.63:8001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-06-05 14:56:13 [org.springframework.boot.StartupInfoLogger:56] - Started InyaaGatewayApplication in 4.22 seconds (process running for 4.675)
+2024-06-05 14:57:22 [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211] - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-06-05 14:57:23 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:89] - Deregistering service with consul: inyaa-gateway-01
+2024-06-05 14:57:30 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:57:30 [com.zaxxer.hikari.HikariDataSource:349] - HikariPool-1 - Shutdown initiated...
+2024-06-05 14:57:30 [com.zaxxer.hikari.HikariDataSource:351] - HikariPool-1 - Shutdown completed.
+2024-06-05 14:57:30 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 20856 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 14:57:30 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 14:57:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:57:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:57:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-06-05 14:57:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:57:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 14:57:30 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 14:57:30 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 14:57:30 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:57:30 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:57:30 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:57:30 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:57:30 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:57:30 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-2 - Starting...
+2024-06-05 14:57:30 [com.zaxxer.hikari.pool.HikariPool:554] - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74298f45
+2024-06-05 14:57:30 [com.zaxxer.hikari.HikariDataSource:122] - HikariPool-2 - Start completed.
+2024-06-05 14:57:30 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 14:57:30 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 14:57:30 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 14:57:30 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05 14:57:30 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-06-05 14:57:31 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-05 14:57:31 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60] - Exposing 1 endpoint beneath base path '/actuator'
+2024-06-05 14:57:31 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+2024-06-05 14:57:31 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-05 14:57:31 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8001 (http)
+2024-06-05 14:57:31 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.50.63', meta={secure=false}, port=8001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.50.63:8001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-06-05 14:57:31 [org.springframework.boot.StartupInfoLogger:56] - Started InyaaGatewayApplication in 1.765 seconds (process running for 83.328)
+2024-06-05 14:57:31 [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:63] - Condition evaluation unchanged
+2024-06-05 14:58:24 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:89] - Deregistering service with consul: inyaa-gateway-01
+2024-06-05 14:58:26 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 14:58:26 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 47812 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 14:58:26 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 14:58:26 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 14:58:26 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 14:58:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:58:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 14:58:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2024-06-05 14:58:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 14:58:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 14:58:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 14:58:27 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 14:58:27 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:58:27 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:58:27 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 14:58:27 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:58:27 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 14:58:27 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 14:58:28 [com.zaxxer.hikari.pool.HikariPool:554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bc2b14e
+2024-06-05 14:58:28 [com.zaxxer.hikari.HikariDataSource:122] - HikariPool-1 - Start completed.
+2024-06-05 14:58:28 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 14:58:28 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 14:58:28 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 14:58:28 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 14:58:28 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05 14:58:28 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-06-05 14:58:29 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-05 14:58:29 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60] - Exposing 1 endpoint beneath base path '/actuator'
+2024-06-05 14:58:30 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+2024-06-05 14:58:30 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-05 14:58:30 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8001 (http)
+2024-06-05 14:58:30 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.50.63', meta={secure=false}, port=8001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.50.63:8001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-06-05 14:58:30 [org.springframework.boot.StartupInfoLogger:56] - Started InyaaGatewayApplication in 4.216 seconds (process running for 4.676)
+2024-06-05 14:58:49 [org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:98] - No servers available for service: data-producer
+2024-06-05 14:59:05 [org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:98] - No servers available for service: data-producer
+2024-06-05 15:00:52 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:89] - Deregistering service with consul: inyaa-gateway-01
+2024-06-05 15:00:52 [org.springframework.cloud.consul.discovery.ConsulCatalogWatch:142] - Error watching Consul CatalogServices
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'startupTimeMetrics': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:73)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.resetIfNeeded(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:62)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.cloud.consul.discovery.ConsulCatalogWatch.catalogServicesWatch(ConsulCatalogWatch.java:139)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:358)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-05 15:00:52 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:00:52 [com.zaxxer.hikari.HikariDataSource:349] - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:00:52 [com.zaxxer.hikari.HikariDataSource:351] - HikariPool-1 - Shutdown completed.
+2024-06-05 15:00:54 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 15:00:54 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 90576 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 15:00:54 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 15:00:54 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 15:00:54 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 15:00:55 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 15:00:55 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 15:00:55 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-06-05 15:00:55 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 15:00:55 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 15:00:55 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 15:00:55 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 15:00:55 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 15:00:55 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 15:00:55 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 15:00:55 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 15:00:55 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 15:00:55 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 15:00:56 [com.zaxxer.hikari.pool.HikariPool:554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3119ecf6
+2024-06-05 15:00:56 [com.zaxxer.hikari.HikariDataSource:122] - HikariPool-1 - Start completed.
+2024-06-05 15:00:56 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 15:00:56 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 15:00:56 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 15:00:56 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 15:00:56 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05 15:00:56 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-06-05 15:00:57 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-05 15:00:57 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60] - Exposing 1 endpoint beneath base path '/actuator'
+2024-06-05 15:00:58 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+2024-06-05 15:00:58 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-05 15:00:58 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8001 (http)
+2024-06-05 15:00:58 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.50.63', meta={secure=false}, port=8001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.50.63:8001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-06-05 15:00:58 [org.springframework.boot.StartupInfoLogger:56] - Started InyaaGatewayApplication in 4.136 seconds (process running for 4.598)
+2024-06-05 15:01:16 [org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:98] - No servers available for service: gateway
+2024-06-05 15:01:18 [org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:98] - No servers available for service: gateway
+2024-06-05 15:01:18 [org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:98] - No servers available for service: gateway
+2024-06-05 15:01:18 [org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:98] - No servers available for service: gateway
+2024-06-05 15:21:55 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:89] - Deregistering service with consul: inyaa-gateway-01
+2024-06-05 15:21:55 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 15:21:55 [com.zaxxer.hikari.HikariDataSource:349] - HikariPool-1 - Shutdown initiated...
+2024-06-05 15:21:55 [com.zaxxer.hikari.HikariDataSource:351] - HikariPool-1 - Shutdown completed.
+2024-06-05 19:20:03 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 19:20:03 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 97524 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 19:20:03 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 19:20:03 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 19:20:03 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 19:20:04 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 19:20:04 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 19:20:04 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-06-05 19:20:04 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 19:20:04 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 19:20:04 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 19:20:04 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 19:20:04 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 19:20:04 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 19:20:04 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 19:20:04 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 19:20:04 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 19:20:04 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 19:20:05 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 19:20:05 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 19:20:05 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 19:20:05 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 19:20:05 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 19:20:06 [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator:359] - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at cn.inyaa.gateway.InyaaGatewayApplication.main(InyaaGatewayApplication.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-06-05 19:20:06 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:426] - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-06-05 19:20:06 [org.springframework.context.support.AbstractApplicationContext:632] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-06-05 19:20:06 [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger:82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-05 19:20:07 [org.springframework.boot.SpringApplication:859] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at cn.inyaa.gateway.InyaaGatewayApplication.main(InyaaGatewayApplication.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 18 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:362)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 33 common frames omitted
+2024-06-05 19:22:27 [org.hibernate.validator.internal.util.Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-05 19:22:27 [org.springframework.boot.StartupInfoLogger:50] - Starting InyaaGatewayApplication using Java 21.0.3 with PID 144392 (G:\workspace\inyaw-cloud\inyaa-gateway\build\classes\java\main started by yuxh in G:\workspace\inyaw-cloud\inyaa-gateway)
+2024-06-05 19:22:27 [org.springframework.boot.SpringApplication:660] - The following 1 profile is active: "dev"
+2024-06-05 19:22:27 [org.springframework.boot.logging.DeferredLog:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-05 19:22:27 [org.springframework.boot.logging.DeferredLog:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-05 19:22:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 19:22:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05 19:22:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-06-05 19:22:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:295] - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-05 19:22:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-06-05 19:22:27 [org.springframework.data.repository.config.RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-06-05 19:22:27 [org.springframework.cloud.context.scope.GenericScope:282] - BeanFactory id=93a0de79-bd8b-333f-b032-09342f2df02f
+2024-06-05 19:22:28 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 19:22:28 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 19:22:28 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:429] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-05 19:22:28 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 19:22:28 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:437] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-05 19:22:28 [com.zaxxer.hikari.HikariDataSource:109] - HikariPool-1 - Starting...
+2024-06-05 19:22:29 [com.zaxxer.hikari.pool.HikariPool:554] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d05e3bd
+2024-06-05 19:22:29 [com.zaxxer.hikari.HikariDataSource:122] - HikariPool-1 - Start completed.
+2024-06-05 19:22:29 [org.hibernate.jpa.internal.util.LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05 19:22:29 [org.hibernate.Version:44] - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-05 19:22:29 [org.hibernate.cache.internal.RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+2024-06-05 19:22:29 [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05 19:22:29 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:59] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05 19:22:29 [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [After]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Before]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Between]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Cookie]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Header]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Host]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Method]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Path]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Query]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [ReadBody]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [Weight]
+2024-06-05 19:22:30 [org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:89] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-05 19:22:31 [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:60] - Exposing 1 endpoint beneath base path '/actuator'
+2024-06-05 19:22:31 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:62] - Unable to start LiveReload server
+2024-06-05 19:22:31 [org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:94] - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-05 19:22:31 [org.springframework.boot.web.embedded.netty.NettyWebServer:141] - Netty started on port 8001 (http)
+2024-06-05 19:22:31 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:65] - Registering service with consul: NewService{id='inyaa-gateway-01', name='inyaa-gateway', tags=[], address='192.168.50.63', meta={secure=false}, port=8001, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://192.168.50.63:8001/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2024-06-05 19:22:31 [org.springframework.boot.StartupInfoLogger:56] - Started InyaaGatewayApplication in 5.141 seconds (process running for 5.58)
+2024-06-05 19:22:44 [org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry:89] - Deregistering service with consul: inyaa-gateway-01
