@@ -28,7 +28,7 @@ steps:
       mount:
         - ./.gradle
   - name: docker
-    image: ccr.ccs.tencentyun.com/inyaa/drone:plugins-docker
+    image: ccr.ccs.tencentyun.com/inyaa/drone:plugins-docker-20
     settings:
       username: 100013433790
       password: Yuxh3318375!
