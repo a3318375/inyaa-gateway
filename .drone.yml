@@ -59,6 +59,7 @@ steps:
         - docker rmi $(docker images  grep inyaa-gateway  awk '{print $3}')
         - echo =======开始部署应用=======
         - docker run -d -p 8001:8001 --name inyaa-gateway --network inyaw --network-alias inyaa-gateway ccr.ccs.tencentyun.com/inyaa/inyaa-gateway:latest
+        
         - echo =======部署成功=======
 volumes:
   - name: cache
