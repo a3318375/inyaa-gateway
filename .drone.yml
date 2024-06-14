@@ -35,10 +35,15 @@ steps:
       - name: docker_sock
         path: /var/run/docker.sock
     settings:
+      swarm: true
+      swarm_stack: swarm-app
+      swarm_services: app
+      insecure: true
       username: 100013433790
       password: Yuxh3318375!
       repo: ccr.ccs.tencentyun.com/inyaa/inyaa-gateway
       registry: ccr.ccs.tencentyun.com
+      mirrors: ccr.ccs.tencentyun.com
       tags: latest
       debug: true
   - name: ssh commands
