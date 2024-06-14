@@ -36,8 +36,6 @@ steps:
       password:
         from_secret: docker_password
       repo: inyaa/inyaa-gateway
-      registry: ccr.ccs.tencentyun.com
-      tags: latest
   - name: ssh commands
     pull: if-not-exists
     image: appleboy/drone-ssh
