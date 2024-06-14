@@ -28,7 +28,12 @@ steps:
       mount:
         - ./.gradle
   - name: docker
+    pull: if-not-exists
     image: ccr.ccs.tencentyun.com/inyaa/drone:plugins-docker-20
+    privileged: true  # 启用特权模式
+    volumes:
+      - name: docker_sock
+        path: /var/run/docker.sock
     settings:
       username: 100013433790
       password: Yuxh3318375!
