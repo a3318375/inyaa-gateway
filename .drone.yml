@@ -29,6 +29,7 @@ steps:
         - ./.gradle
   - name: docker
     image: ccr.ccs.tencentyun.com/inyaa/drone:plugins-docker
+    privileged: true
     settings:
       username:
         from_secret: docker_username
