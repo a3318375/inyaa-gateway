@@ -1,0 +1,66 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: restore-cache
+    image: drillster/drone-volume-cache
+    volumes:
+      - name: cache
+        path: /cache
+    settings:
+      restore: true
+      mount:
+        - ./.gradle
+  - name: build
+    image: gradle:jdk21
+    commands:
+      - export GRADLE_USER_HOME=./.gradle
+      - chmod +x ./gradlew
+      - ./gradlew
+  - name: rebuild-cache
+    image: drillster/drone-volume-cache
+    volumes:
+      - name: cache
+        path: /cache
+    settings:
+      rebuild: true
+      mount:
+        - ./.gradle
+  - name: docker
+    image: ccr.ccs.tencentyun.com/inyaa/drone:plugins-docker
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      repo: inyaa/inyaa-gateway
+      registry: ccr.ccs.tencentyun.com
+      tags: latest
+  - name: ssh commands
+    pull: if-not-exists
+    image: appleboy/drone-ssh
+    settings:
+      host:
+        from_secret: ssh_ip
+      username:
+        from_secret: ssh_username
+      password:
+        # 从drone仓库配置中秘密空间读取密码
+        from_secret: ssh_password
+      port:
+        from_secret: ssh_port
+      # 注意把下面的 springboot-helloworld 改成自己项目mvn pkg会生成的jar包名称
+      script:
+        - echo =======暂停容器=======
+        - docker stop $(docker ps -a  grep "inyaa-gateway"  awk '{print $1}')
+        - echo =======暂停旧容器和镜像=======
+        - docker rm -f $(docker ps -a  grep inyaa-gateway  awk '{print $1}')
+        - docker rmi $(docker images  grep inyaa-gateway  awk '{print $3}')
+        - echo =======开始部署应用=======
+        - docker run -d -p 8001:8001 --name inyaa-gateway --network inyaw --network-alias inyaa-gateway ccr.ccs.tencentyun.com/inyaa/inyaa-gateway:latest
+        - echo =======部署成功=======
+volumes:
+  - name: cache
+    host:
+      path: /tmp/cache
