@@ -30,6 +30,9 @@ steps:
   - name: docker
     image: ccr.ccs.tencentyun.com/inyaa/drone:plugins-docker
     privileged: true
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
     settings:
       username: 100013433790
       password: Yuxh3318375!
