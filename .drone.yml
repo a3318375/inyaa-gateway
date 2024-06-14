@@ -29,16 +29,13 @@ steps:
         - ./.gradle
   - name: docker
     image: ccr.ccs.tencentyun.com/inyaa/drone:plugins-docker
-    privileged: true
-    volumes:
-      - name: docker
-        path: /var/run/docker.sock
     settings:
       username: 100013433790
       password: Yuxh3318375!
       repo: ccr.ccs.tencentyun.com/inyaa/inyaa-gateway
       registry: ccr.ccs.tencentyun.com
       tags: latest
+      debug: true
   - name: ssh commands
     pull: if-not-exists
     image: appleboy/drone-ssh
