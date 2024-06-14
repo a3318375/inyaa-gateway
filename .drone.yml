@@ -41,10 +41,10 @@ steps:
       insecure: true
       username: 100013433790
       password: Yuxh3318375!
-      repo: ccr.ccs.tencentyun.com
-      registry: ccr.ccs.tencentyun.com/inyaa/inyaa-gateway
-      mirrors: ccr.ccs.tencentyun.com
-      tags: latest
+      repo: ccr.ccs.tencentyun.com/inyaa/inyaa-gateway
+      registry: ccr.ccs.tencentyun.com
+      tags:
+        - latest
       debug: true
   - name: ssh commands
     pull: if-not-exists
