@@ -9,4 +9,3 @@ ENTRYPOINT ["java","-jar","/inyaa-gateway.jar"]
 
 
 
-
