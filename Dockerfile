@@ -6,3 +6,4 @@ EXPOSE 8001
 #开机启动
 ENTRYPOINT ["java","-jar","/inyaa-gateway.jar"]
 # ENTRYPOINT ["java","-jar","/inyaa-gateway.jar", "--spring.profiles.active=pro"]
+
