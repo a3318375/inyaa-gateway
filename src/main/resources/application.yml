@@ -64,3 +64,4 @@ spring:
     username: root
     password: Yuxh3318375!
     driver-class-name: com.mysql.cj.jdbc.Driver
+
