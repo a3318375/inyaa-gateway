@@ -8,3 +8,4 @@ ENTRYPOINT ["java","-jar","/inyaa-gateway.jar"]
 # ENTRYPOINT ["java","-jar","/inyaa-gateway.jar", "--spring.profiles.active=pro"]
 
 
+
